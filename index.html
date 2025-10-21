@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tejidos Fernantex — Bufandas tejidas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --beige:#F5EBDD;
+      --blue:#132033;
+      --accent:#C84B3A;
+      --card-shadow: 0 6px 18px rgba(19,32,51,0.08);
+    }
+    *{box-sizing:border-box}
+    body{font-family:"Montserrat",system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial; margin:0; background:var(--beige); color:var(--blue); -webkit-font-smoothing:antialiased}
+    header{background:linear-gradient(180deg, rgba(19,32,51,0.97), rgba(19,32,51,0.95)); color:var(--beige); padding:18px 16px; display:flex; align-items:center; gap:12px}
+    header img{height:54px; width:auto}
+    .brand{display:flex;flex-direction:column}
+    .brand h1{font-family:'Playfair Display', serif; margin:0; font-size:20px; letter-spacing:0.5px}
+    .brand p{margin:0; font-size:12px; opacity:0.9}
+    nav{display:flex; gap:10px; margin-left:auto}
+    nav a{color:var(--beige); text-decoration:none; font-size:14px; padding:8px}
+
+    main{padding:16px}
+    .intro{background:linear-gradient(90deg, rgba(255,255,255,0.75), rgba(255,255,255,0.6)); padding:12px; border-radius:12px; box-shadow:var(--card-shadow); margin-bottom:14px}
+    .intro h2{margin:0 0 6px 0; font-size:18px; color:var(--blue)}
+    .intro p{margin:0; font-size:14px}
+
+    .grid{display:grid; grid-template-columns:1fr; gap:12px}
+    .card{background:white; border-radius:12px; overflow:hidden; box-shadow:var(--card-shadow); display:flex; gap:12px; align-items:center}
+    .card img.product{width:42%; height:100%; object-fit:cover}
+    .card .info{padding:12px; flex:1}
+    .title{font-weight:700; font-size:15px; margin:0 0 6px 0}
+    .meta{font-size:13px; margin-bottom:8px; color:#3b3b3b}
+    .price{font-weight:800; color:var(--accent); margin-bottom:10px}
+    .actions{display:flex; gap:8px}
+    .btn{flex:1; display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:10px; border-radius:10px; text-decoration:none; font-weight:600}
+    .btn.whatsapp{background:linear-gradient(90deg,#25D366,#128C7E); color:white}
+    .btn.secondary{background:transparent; border:1px solid #e6e6e6; color:var(--blue)}
+
+    footer{padding:16px; text-align:center; font-size:13px; color:#2b2b2b}
+
+    @media(min-width:640px){
+      .grid{grid-template-columns:1fr 1fr}
+      .card img.product{width:48%}
+    }
+    @media(min-width:900px){
+      body{max-width:980px;margin:0 auto}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://scontent.fbga1-4.fna.fbcdn.net/v/t39.30808-6/565894598_1365595691935768_8505223456054214829_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Ady9njtF57MQ7kNvwHm4YeF&_nc_oc=AdmHV4__g3s16QCDeVlelKNc9TayqrlcOEfQYLN8eK3pEwhmPQ7_T3YzVa74x68HDFg&_nc_zt=23&_nc_ht=scontent.fbga1-4.fna&_nc_gid=LK0kCgRCQoy3pD0Qm5T3aw&oh=00_AffR_ZuszxEIja_YWfU_ZCsNKPOuJSqYgZcq2ETG2tpl3w&oe=68FCA508" alt="Tejidos Fernantex logo">
+    <div class="brand">
+      <h1>Tejidos Fernantex</h1>
+      <p>Bufandas tejidas</p>
+    </div>
+    <nav>
+      <a href="#productos">Bufandas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Tejido de alta calidad, suave, duradero y con colores vibrantes.</h2>
+      <p>Diseños exclusivos en bufandas tejidas. Envíos a todo Colombia • Pide directo por WhatsApp.</p>
+    </section>
+
+    <section id="productos" class="grid">
+      <article class="card">
+        <img class="product" src="https://scontent.fbga1-4.fna.fbcdn.net/v/t39.30808-6/567771379_1365557631939574_7705734652826557905_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=fvV6IWDk7iUQ7kNvwFIqYpP&_nc_oc=Adk5Eq3fQpC7BSuLm53ayRhAK4U3MPXS_VmPhZ8oGRH-n4X_2thhcESCXP1wDRz5ihk&_nc_zt=23&_nc_ht=scontent.fbga1-4.fna&_nc_gid=57qcEduamHcYot_Su0RVbA&oh=00_Afd7OkULlc1b3QfOQe8AzX6vkLY4E7ZO3wiHPOIG9v5aeA&oe=68FC77A5" alt="Nuevo diseño exclusivo del Leopardo">
+        <div class="info">
+          <div class="title">Nuevo diseño exclusivo del Leopardo</div>
+          <div class="meta">Medidas: 150 cm x 18 cm</div>
+          <div class="price">$60.000</div>
+          <div class="actions">
+            <a class="btn whatsapp" href="https://wa.me/573156407569?text=Hola%2C%20quiero%20la%20bufanda%20%22Nuevo%20dise%C3%B1o%20exclusivo%20del%20Leopardo%22%20-%20Tejidos%20Fernantex" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="product" src="https://scontent.fbga1-3.fna.fbcdn.net/v/t39.30808-6/565291229_1365533778608626_754992473283310920_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=v5hRd0I2vUcQ7kNvwFyYy0N&_nc_oc=Adl2Wp5Il1FvukiNfaoVOQYNt3o6g92rQPrB5gXRz9Yxq9RhrQlF0yqd4x5vSmUeuaA&_nc_zt=23&_nc_ht=scontent.fbga1-3.fna&_nc_gid=e-KHRloqOoTuQZeJdE7zwA&oh=00_Afdr0DXDb0QdZarI_8-Tpe_qv8bmIwofo3z1Z82aWNfVnA&oe=68FC8E5E" alt="¡Orgullo Leopardoooo!">
+        <div class="info">
+          <div class="title">¡Orgullo Leopardoooo!</div>
+          <div class="meta">Medidas: 140 cm x 18 cm</div>
+          <div class="price">$50.000</div>
+          <div class="actions">
+            <a class="btn whatsapp" href="https://wa.me/573156407569?text=Hola%2C%20quiero%20la%20bufanda%20%22Orgullo%20Leopardoooo%22%20-%20Tejidos%20Fernantex" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="product" src="https://scontent.fbga1-3.fna.fbcdn.net/v/t39.30808-6/567718749_1365528181942519_5852076459582998058_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=we97mO-29n4Q7kNvwHKwDEa&_nc_oc=Adl9G35eP4AdO2FKVl9WV4K11aWrWCN7edS2vUteqDfmJJrREfgoYAlRl_eA1meF_0g&_nc_zt=23&_nc_ht=scontent.fbga1-3.fna&_nc_gid=qOU6fpOoBBmQBJ7hN2lWvQ&oh=00_AfeB7Y9Mc8XRBj-x6iCKlKM9AsiIsN_vJjsRlt_0bWDUiQ&oe=68FC7376" alt="¡Apoya a la Selección con estilo!">
+        <div class="info">
+          <div class="title">¡Apoya a la Selección con estilo! 🇨🇴</div>
+          <div class="meta">Medidas: 130 cm x 16 cm</div>
+          <div class="price">$60.000</div>
+          <div class="actions">
+            <a class="btn whatsapp" href="https://wa.me/573156407569?text=Hola%2C%20quiero%20la%20bufanda%20%22Apoya%20a%20la%20Selecci%C3%B3n%20con%20estilo%22%20-%20Tejidos%20Fernantex" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="contacto" style="margin-top:14px">
+      <div class="intro">
+        <h2>Contacto</h2>
+        <p>Correo: <a href="mailto:fernantex877@gmail.com">fernantex877@gmail.com</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/tejidosfernantex2017/" target="_blank">@tejidosfernantex2017</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/TEJIDOSFERNANTEX?locale=es_LA" target="_blank">TEJIDOSFERNANTEX</a></p>
+        <p>WhatsApp: <a href="https://wa.me/573156407569">+57 315 640 7569</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© <strong>Tejidos Fernantex</strong> • Bufandas hechas a mano</div>
+  </footer>
+</body>
+</html>
